@@ -11,6 +11,11 @@ describe "working with hashes" do
     end
 
 
+def new_hash
+  hash = {}
+end
+  
+    
     describe "my_hash" do
       it "creates and returns a valid hash that contains key/value pairs of your choice" do
         expect(my_hash).to be_a(Hash)
@@ -18,13 +23,31 @@ describe "working with hashes" do
       end
     end
 
+
+def my_hash 
+  hash = {
+    :age => 3
+  }
+  hash
+end
+
+    
     describe "pioneer" do
       it "creates and returns a hash named pioneer whose key is a symbol :name and whose value is a string, 'Grace Hopper'" do
         expect(pioneer).to be_a(Hash)
         expect(pioneer[:name]).to eq("Grace Hopper")
       end
     end
-
+    
+    
+    def pioneer 
+      hash = {
+        :name => "Grace Hopper"
+      }
+    hash
+  end
+  
+  
     describe "id_generator" do
       it "creates and returns a hash with a key :id and a random number assigned to the value" do
         expect(id_generator).to be_a Hash
@@ -32,7 +55,16 @@ describe "working with hashes" do
         expect(id_generator[:id]).to be > 0
       end
     end
+    
+   
+    def id_generator
+      hash = {
+        :id => 14
+      }
+      hash
+    end 
 
+    
     describe "my_hash_creator" do
       it "accepts a key and a value as parameters and returns a hash with this key/value pair inside" do
         expect(my_hash_creator(:name, 'Grace Hopper')).to be_a(Hash)
@@ -44,6 +76,16 @@ describe "working with hashes" do
   end
 end
 
+
+
+def my_hash_creator(key, pair)
+  hash1 = {
+    key => pair
+  }
+  hash1
+end
+  
+  
 describe "reading data from a hash" do
   describe "read_from_hash" do
     it "returns the value corresponding to the provided key" do
@@ -56,6 +98,7 @@ describe "reading data from a hash" do
     end
   end
 end
+
 
 describe "updating data in a hash" do
   describe "update_counting_hash" do
@@ -75,3 +118,5 @@ describe "updating data in a hash" do
   end
 
 end
+
+

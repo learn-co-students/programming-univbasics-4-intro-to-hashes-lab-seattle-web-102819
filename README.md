@@ -1,4 +1,4 @@
-# Intro to Hashes Lab
+bey guys im trying o figure out exactly what the 6t# Intro to Hashes Lab
 
 ## Learning Goals
 
